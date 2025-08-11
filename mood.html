@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeelSpace | Mood Tracker</title>
+  <link rel="stylesheet" href="mood.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="journal.html">📝 Journal</a></li>
+      <li><a href="bot.html">🤖 SoulBot</a></li>
+      <li><a href="mood.html" class="active">📘 Mood Tracker</a></li>
+      <li><a href="healing.html">🎧 Healing</a></li>
+      <li><a href="entries.html">📂 My Entries</a></li>
+      <li><a href="help.html">🫂 Help</a></li>
+    </ul>
+  </nav>
+
+  <div class="mood-container">
+    <h2>📘 How Are You Feeling Today?</h2>
+
+    <div class="emoji-picker">
+      <button onclick="selectMood('🙂')">🙂</button>
+      <button onclick="selectMood('😔')">😔</button>
+      <button onclick="selectMood('🥺')">🥺</button>
+      <button onclick="selectMood('😡')">😡</button>
+      <button onclick="selectMood('😄')">😄</button>
+    </div>
+
+    <textarea id="moodNote" placeholder="Write a short note..."></textarea>
+    <button onclick="saveMood()">Save Mood</button>
+
+    <h3>Your Mood History</h3>
+    <div id="moodHistory" class="history"></div>
+  </div>
+
+  <script src="mood.js"></script>
+</body>
+</html>

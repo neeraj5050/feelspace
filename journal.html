@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeelSpace | Journal</title>
+  <link rel="stylesheet" href="journal.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="journal.html" class="active">📝 Journal</a></li>
+      <li><a href="bot.html">🤖 SoulBot</a></li>
+      <li><a href="mood.html">📘 Mood Tracker</a></li>
+      <li><a href="healing.html">🎧 Healing</a></li>
+      <li><a href="entries.html">📂 My Entries</a></li>
+      <li><a href="help.html">🫂 Help</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>📝 Journal Your Feelings</h1>
+    <label for="mood">How are you feeling today?</label>
+    <select id="mood">
+      <option value="happy">🙂 Happy</option>
+      <option value="sad">😞 Sad</option>
+      <option value="anxious">🥺 Anxious</option>
+      <option value="angry">😡 Angry</option>
+      <option value="neutral">😐 Neutral</option>
+    </select>
+
+    <textarea id="entry" placeholder="Write what you're feeling right now..."></textarea>
+
+    <div class="buttons">
+      <button onclick="talkToBot()">💬 Talk to SoulBot</button>
+      <textarea id="journalInput" placeholder="Write what you feel..."></textarea>
+<button id="saveBtn">Save Entry</button>
+      <button onclick="saveEntry()">💾 Save Entry</button>
+    </div>
+
+    <div id="botReply"></div>
+  </div>
+
+  <script src="journal.js"></script>
+</body>
+</html>

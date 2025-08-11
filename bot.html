@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeelSpace | SoulBot</title>
+  <link rel="stylesheet" href="bot.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="journal.html">📝 Journal</a></li>
+      <li><a href="bot.html" class="active">🤖 SoulBot</a></li>
+      <li><a href="mood.html">📘 Mood Tracker</a></li>
+      <li><a href="healing.html">🎧 Healing</a></li>
+      <li><a href="entries.html">📂 My Entries</a></li>
+      <li><a href="help.html">🫂 Help</a></li>
+    </ul>
+  </nav>
+
+  <div class="chat-container">
+    <h2>🤖 Talk to SoulBot</h2>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Tell me how you feel..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="bot.js"></script>
+</body>
+</html>

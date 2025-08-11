@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeelSpace | My Entries</title>
+  <link rel="stylesheet" href="entries.css" />
+</head>
+<body>
+    <section id="entries-section">
+  <h2>Your Journal Entries</h2>
+  <div id="entries-container"></div>
+</section>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="journal.html">📝 Journal</a></li>
+      <li><a href="bot.html">🤖 SoulBot</a></li>
+      <li><a href="mood.html">📘 Mood Tracker</a></li>
+      <li><a href="healing.html">🎧 Healing</a></li>
+      <li><a href="entries.html" class="active">📂 My Entries</a></li>
+      <li><a href="help.html">🫂 Help</a></li>
+    </ul>
+  </nav>
+
+  <div class="entries-container">
+    <h1>📂 My Saved Feelings</h1>
+    <p>Below are your saved journal entries. Reflect, download, or clear anytime.</p>
+
+    <div id="entriesList" class="entries-list">
+      <!-- Entries will load here -->
+    </div>
+
+    <div class="buttons">
+      <button onclick="downloadAll()">⬇️ Download All (.txt)</button>
+      <button onclick="clearEntries()">🗑️ Clear All</button>
+    </div>
+  </div>
+
+  <script src="entries.js"></script>
+</body>
+</html>

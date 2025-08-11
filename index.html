@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FeelSpace – Heal Gently</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌸 FeelSpace</h1>
+    <p>Your space to write, feel, and heal — without judgement.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="journal.html">📝 Journal</a></li>
+      <li><a href="bot.html">🤖 SoulBot</a></li>
+      <li><a href="mood.html">📘 Mood Tracker</a></li>
+      <li><a href="healing.html">🎧 Healing Corner</a></li>
+      <li><a href="entries.html">📂 My Entries</a></li>
+      <li><a href="help.html">🫂 Get Help</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero clean-hero">
+      <h1>Welcome to <strong>FeelSpace</strong></h1>
+      <a href="journal.html" class="start-btn">Start Your Journey</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for your mental wellness.</p>
+  </footer>
+  <form id="journalForm">
+  <input type="text" id="title" placeholder="Title" required>
+  <textarea id="content" placeholder="Write your thoughts..." required></textarea>
+  <button type="submit">Save Entry</button>
+</form>
+
+<script>
+document.getElementById("journalForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    
+    const title = document.getElementById("title").value;
+    const content = document.getElementById("content").value;
+
+    const response = await fetch("http://localhost:5000/save-entry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, content })
+    });
+
+    const result = await response.json();
+    alert(result.message);
+});
+</script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

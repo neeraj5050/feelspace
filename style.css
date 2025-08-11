@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e1e2f, #1e1e2f);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 10px;
+  background-color: #ffffffaa;
+  backdrop-filter: blur(6px);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #6a5acd;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+nav {
+  background: #e6ecff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 16px;
+  color: #444;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px #ddd;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #dcdcff;
+}
+
+.hero {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #6a5acd;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #5848b3;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background: #fafaff;
+  color: #777;
+}
+.image-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.6); /* darkens image */
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  top: 40%;
+}
+
+.start-btn {
+  background: #00b894;
+  padding: 12px 25px;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f5ff;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 15px;
+  background: #e2eaff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #dcdcff;
+}
+
+/* Hero Section with full-screen image background */
+.image-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("my 2-school.jpg.jpeg"); /* Use your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.start-btn {
+  background: #00b894;
+  padding: 14px 30px;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #019874;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e6f0ff, #f8faff);
+  color: #333;
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff88;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 15px;
+  background: #e2eaff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #dcdcff;
+}
+
+/* Hero Section (no image) */
+.clean-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.clean-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.start-btn {
+  background: #00b894;
+  padding: 14px 30px;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #019874;
+}
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e6f0ff, #f8faff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background: #ffffffaa;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  background: #e2eaff;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #dcdcff;
+}
+
+/* Hero Section */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.clean-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  min-height: 60vh;
+  text-align: center;
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.clean-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.start-btn {
+  background: #00b894;
+  padding: 14px 30px;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #019874;
+}
+#entries-section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.entry-box {
+  background: #2c2c3e;
+  color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8;
+  color: #333;
+}
+header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+nav {
+  background: #333;
+}
+nav ul {
+  list-style: none;
+}
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary), #9ab8a4);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://placehold.co/1920x1080/6a8372/ffffff?text=FeelSpace') center/cover;
+      opacity: 0.2;
+    }
+    
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      position: relative;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    nav {
+      background-color: white;
+      box-shadow: var(--shadow);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    
+    nav ul li {
+      margin: 0 1rem;
+    }
+    
+    nav ul li a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+    }
+    
+    nav ul li a i {
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+    }
+    
+    nav ul li a:hover {
+      background-color: var(--accent);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    .hero {
+      background: linear-gradient(rgba(106, 131, 114, 0.7), rgba(184, 196, 187, 0.7)), 
+                  url('https://placehold.co/1920x1080/6a8372/ffffff?text=FindYourPeace') center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 3rem;
+    }
+    
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    
+    .start-btn {
+      background-color: rgb(24, 23, 23);
+      color: var(--primary);
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      position: relative;
+      border: 2px solid white;
+    }
+    
+    .start-btn:hover {
+      background-color: transparent;
+      color: rgb(47, 39, 39);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
+    footer {
+      background: linear-gradient(135deg, var(--primary), var(--dark));
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    
+    footer p {
+      margin-bottom: 1rem;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 1rem;
+      transition: var(--transition);
+    }
+    
+    .social-links a:hover {
+      color: var(--accent);
+      transform: translateY(-3px);
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero {
+        height: 50vh;
+      }
+    }
+  
+
